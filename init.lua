@@ -41,13 +41,14 @@ mobs:register_mob("josetanajuras:tanajura", {
     fear_height = 3,
     runaway = true,
     fly = true,
-    fly_in = {
-		"air", "default:water_source", "default:water_flowing",
+    --[[fly_in = {"air", "default:water_source", "default:water_flowing",
 		"default:lava_source", "default:lava_flowing"
-	},
+	},]]
+                                             
+    fly_in = {"air"},
     walk_chance =50,
     fly_chance =50,
-    stand_chance=50,
+    stand_chance=0,
     view_range = 8,
     passive = true,
     hp_min = 5,
@@ -58,7 +59,7 @@ mobs:register_mob("josetanajuras:tanajura", {
     water_damage = 5,
     knock_back=false,
     knock_back=true,
-    on_flop= "default:dirt_with_grass",                                             
+
 })
 mobs:register_egg("josetanajuras:tanajura", ("tanajura"), "tanajura_icone.png", 0)
 
